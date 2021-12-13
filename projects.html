@@ -24,9 +24,9 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow p fixed-top" style="background-color: #b05ec8">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow p fixed-top" style="background-color: #d775f5">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" href="#">Achmad Thoriq</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -211,7 +211,7 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#b05ec8"
+              fill="#d775f5"
               fill-opacity="1"
               d="M0,160L24,160C48,160,96,160,144,170.7C192,181,240,203,288,224C336,245,384,267,432,245.3C480,224,528,160,576,160C624,160,672,224,720,213.3C768,203,816,117,864,122.7C912,128,960,224,1008,234.7C1056,245,1104,171,1152,160C1200,149,1248,203,1296,240C1344,277,1392,299,1416,309.3L1440,320L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
             ></path>
@@ -221,7 +221,7 @@
 
 
     <!-- Footer -->
-    <footer class="text-white text-center pb-4 fs-5" style="background-color: #b05ec8">
+    <footer class="text-white text-center pb-4 fs-5" style="background-color: #d775f5">
       <p>Created by <a href="https://www.linkedin.com/in/achmad-thoriq-b4630a162/" class="text-white fw-bold">Achmad Thoriq Aminullah</a> <i class="bi bi-emoji-heart-eyes-fill text-warnings"></i></i></p>
     </footer>
     <!-- End Footer -->
@@ -233,6 +233,12 @@
       AOS.init({
         once:true,
       });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script>
+      gsap.from('.navbar', {duration: 1.5, y:'-100%',  opacity: 0, ease: 'bounce'});
+      gsap.from('.display-4', {duration: 1, x:-50,  opacity: 0, delay: 0.5, ease: 'back'});
     </script>
   
   </body>
