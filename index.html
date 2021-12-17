@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- End CSS -->
 
-    <title>My Portfolio | Achmad Thoriq A</title>
+    <link rel="icon" href="img/exp1.png" sizes="16x16"><title>Achmad Thoriq A | Portfolio </title>
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="row justify-content-center text-center mt-3">
-          <div class="col-md-4">
+          <div class="col-md-4 card-exp">
           <div class="card mb-3" style="background-color: #f05dd0;" data-aos="flip-left" data-aos-delay="500" 
           data-aos-duration="800">
             <div class="card-header"><h5>Analyst</h5></div>
@@ -124,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 card-exp">
           <div class="card mb-3" style="background-color: #f05dd0;" data-aos="flip-right" data-aos-delay="700" 
           data-aos-duration="800" >
             <div class="card-header"><h5>Analyst</h5></div>
@@ -158,7 +158,7 @@ fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,176C192,139,240,85,288,58.
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-offset="450" data-aos-delay="100" data-aos-duration="200">
-            <div class="card">
+            <div class="card card-project">
               <img src="img/projects/foto1.jpg" class="card-img-top" alt="Projects 1" />
               <div class="card-body">
                 <h5 class="card-title">Melbourne House Price Segmentation</h5>
@@ -170,7 +170,7 @@ fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,176C192,139,240,85,288,58.
             </div>
           </div>
           <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-offset="450" data-aos-delay="100" data-aos-duration="200">
-            <div class="card">
+            <div class="card card-project">
               <img src="img/projects/foto2.jpg" class="card-img-top" alt="Projects 2" />
               <div class="card-body">
                 <h5 class="card-title">Heart Failure Prediction</h5>
@@ -250,6 +250,18 @@ fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,176C192,139,240,85,288,58.
       <p>Created by <a href="https://www.linkedin.com/in/achmad-thoriq-b4630a162/" class="text-white fw-bold">Achmad Thoriq Aminullah</a> <i class="bi bi-emoji-heart-eyes-fill text-warnings"></i></i></p>
     </footer>
     <!-- End Footer -->
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card-project"), {
+      max: 25,
+      speed: 400
+	    });
+      VanillaTilt.init(document.querySelectorAll(".card-exp"), {
+      max: 25,
+      speed: 400 
+      })
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
